@@ -1,5 +1,15 @@
-const fibonacci = function() {
+const fibonacci = function(number) {
+    let n = parseInt(number);
+    
+    if (n < 0) {
+        return "OOPS";
+    }
+    
+    if (n <= 1) {
+        return n;
+    }
 
+    return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
 // Do not edit below this line
